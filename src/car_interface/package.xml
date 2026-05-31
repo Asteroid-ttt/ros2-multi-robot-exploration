@@ -1,0 +1,32 @@
+<?xml version="1.0"?>
+<?xml-model href="http://download.ros.org/schema/package_format3.xsd" schematypens="http://www.w3.org/2001/XMLSchema"?>
+<package format="3">
+  <name>car_interface</name>
+  <version>0.0.1</version>
+  <description>
+    ROS2 bridge between Nav2 navigation stack and serial-controlled robot car.
+    Subscribes to /cmd_vel, sends "car cruise" commands via serial, queries
+    "car status" to compute odometry, and publishes /odom and /tf.
+  </description>
+  <maintainer email="user@example.com">user</maintainer>
+  <license>MIT</license>
+
+  <!-- ROS2 Python dependencies -->
+  <depend>rclpy</depend>
+  <depend>nav_msgs</depend>
+  <depend>geometry_msgs</depend>
+  <depend>tf2_ros</depend>
+  <depend>std_msgs</depend>
+
+  <!-- Python system dependency: pyserial for serial port communication -->
+  <!-- Install with: pip3 install pyserial -->
+
+  <test_depend>ament_copyright</test_depend>
+  <test_depend>ament_flake8</test_depend>
+  <test_depend>ament_pep257</test_depend>
+  <test_depend>python3-pytest</test_depend>
+
+  <export>
+    <build_type>ament_python</build_type>
+  </export>
+</package>
