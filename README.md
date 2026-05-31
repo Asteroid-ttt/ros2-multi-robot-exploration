@@ -1,4 +1,4 @@
-项目基于开源项目 https://github.com/econsystems/ros2-multi-robot-automap，在此基础上进行了一些修改。
+项目基于开源项目 https://github.com/econsystems/ros2-multi-robot-automap ，在此基础上进行了一些修改。
 
 /src 文件夹是项目的核心代码，包含仿真环境、机器人控制、地图构建等功能模块。
 
